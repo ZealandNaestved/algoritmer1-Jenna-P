@@ -68,7 +68,7 @@ public class Algorithms1 {
     // TODO 6 - Skriv en test til randomName() metoden
     // Se Test class
     // TODO 7 - Skriv en random bogstavs-generator metode (du kan tage udgangspunkt i randomNumbers() i Data)
-    public char charGenerator() {
+   /* public char charGenerator() {
 
         Data data = new Data();
 
@@ -78,13 +78,26 @@ public class Algorithms1 {
         System.out.println(character);
 
         return character;
+    } */
+    public void charGenerator() {
+        final int MAX = 121;
+        int rdNum = 1;
+        while ((rdNum < 65) || (90 < rdNum  &&  rdNum <97) ) {
+            rdNum = rd.nextInt(MAX) + 1;
+
+        }
+        System.out.println((char)rdNum);
+
     }
+
+
 
     // TODO 8 - Skriv en  plet eller krone generator metode (plet er boolean true og krone er boolean false)
 
     public static void main(String[] args) {
-       // exampleOfPredictableRandomNumber();
-        new Algorithms1().charGenerator();
+       //exampleOfPredictableRandomNumber();
+       new Algorithms1().charGenerator();
+
     }
 
     private static void exampleOfPredictableRandomNumber() {

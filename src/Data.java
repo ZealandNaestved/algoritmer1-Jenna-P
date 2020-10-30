@@ -17,7 +17,8 @@ public class Data {
     private String[] randomDrengeNavne = {"Awesome","Barc","Blær","Brormand","Bue","Cello","Cobra","Dreng","Faktor","Fru","Gandalf","Haj","Havand","Jazz","Jesus","Jura","Kamel","Klausbjerke","Kritte","Laban","Lillemann","Life","Lucky (kan endda kombineres med Luke)","Ludo","Lurifax","Memo","Muslim","Nam","Niks","Nord","Offer","Og","Piphat","Rocky","Skak","Skat","Snoopy","Sok","Sut","Syver","Sønnik","Tavs","Triumf","Tung","Viking"};
 
     public static void main(String[] args) {
-        randomNumbers(10, 10);
+
+       randomNumbers(10, 10);
     }
 
     private static void randomNumbers(int n, int max) {
@@ -28,6 +29,7 @@ public class Data {
         System.out.print(new Random().nextInt(max));
         System.out.print("}");
     }
+
 
     public String[] getRandomPigeNavne() {
         return randomPigeNavne;
