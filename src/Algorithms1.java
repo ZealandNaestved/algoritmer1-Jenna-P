@@ -1,5 +1,6 @@
 import com.sun.tools.javac.util.ArrayUtils;
 
+import java.text.DateFormat;
 import java.util.Random;
 import java.util.Arrays;
 
@@ -41,7 +42,7 @@ public class Algorithms1 {
 
     }
     // TODO 5 - Skriv en randomName() metode i Algorithms1, som laver et sammenlagt array som indeholder både piger og drenge, og returnerer det
-    public String[] randomName() {
+   public String[] randomName() {
         Data data = new Data();
         String[] name1 = data.getRandomDrengeNavne();
         String[] name2 = data.getRandomPigeNavne();
@@ -63,7 +64,7 @@ public class Algorithms1 {
 
         return allNames;
 
-            }
+    }
 
     // TODO 6 - Skriv en test til randomName() metoden
     // Se Test class
@@ -89,14 +90,12 @@ public class Algorithms1 {
         System.out.println((char)rdNum);
 
     }
-
-
-
     // TODO 8 - Skriv en  plet eller krone generator metode (plet er boolean true og krone er boolean false)
 
     public static void main(String[] args) {
        //exampleOfPredictableRandomNumber();
        new Algorithms1().charGenerator();
+        new Algorithms1().randomName();
 
     }
 
