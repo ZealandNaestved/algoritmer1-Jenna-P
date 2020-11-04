@@ -92,10 +92,32 @@ public class Algorithms1 {
     }
     // TODO 8 - Skriv en  plet eller krone generator metode (plet er boolean true og krone er boolean false)
 
+    public static void coinGenerator() {
+        boolean plet = true;
+        boolean krone = false;
+
+       int rdNum = new Algorithms1().rd.nextInt(2);
+       if (rdNum == 0) {
+           plet = true;
+           krone = false;
+           System.out.println("plet");
+
+       } else {
+           krone = true;
+           plet = false;
+           System.out.println("krone");
+
+       }
+
+
+    }
+
+
     public static void main(String[] args) {
        //exampleOfPredictableRandomNumber();
-       new Algorithms1().charGenerator();
-        new Algorithms1().randomName();
+      // new Algorithms1().charGenerator();
+       // new Algorithms1().randomName();
+        coinGenerator();
 
     }
 
