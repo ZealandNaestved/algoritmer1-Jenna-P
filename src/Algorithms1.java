@@ -99,16 +99,15 @@ public class Algorithms1 {
        int rdNum = new Algorithms1().rd.nextInt(2);
        if (rdNum == 0) {
            plet = true;
-           krone = false;
+          // krone = false;
            System.out.println("plet");
 
        } else {
            krone = true;
-           plet = false;
+          // plet = false;
            System.out.println("krone");
 
        }
-
 
     }
 

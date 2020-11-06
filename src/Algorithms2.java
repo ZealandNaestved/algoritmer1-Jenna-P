@@ -15,11 +15,16 @@ public class Algorithms2 {
         Data data = new Data();
         int[] rdNum = data.getRandomNumbers1000();
         int oneNumber = 777;
+        boolean found = false;
 
         for (int i = 0; i < rdNum.length ; i++) {
             if (rdNum[i] == oneNumber)
                 System.out.println("Element(numbers) has found at position " + i);
+            found = true;
+
         }
+        if (!found)
+            System.out.println("element has not been found");
     }
 
     // TODO 2 Skriv en metode her i denne klasse, som kan finde et navn i Data klassens randomDrengeNavne felt med LINEAR SEARCH
